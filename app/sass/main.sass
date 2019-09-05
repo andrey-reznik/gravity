@@ -6,3 +6,310 @@
 @import "keyframes"
 @import "smart-grid"
 @import "media"
+
+body
+    font-family: 'Fira Sans', sans-serif
+    color: #8d8d8d
+    font-size: 18px
+    margin: 0
+    padding: 0
+
+button
+    display: block
+    background: transparent
+
+h1, h2, h3, h4, h5, h6
+    font-weight: 700
+    font-style: normal
+    color: #151515
+    margin: 0
+    padding: 0
+
+h2
+    font-size: 38px
+ul, li
+    display: block
+    padding: 0
+    margin: 0
+.btn
+    background: #4737ff
+    color: #ffffff
+    text-transform: uppercase
+    font-weight: 500
+    font-size: 14px
+    padding: 13px 26px
+    border: none
+    display: inline
+    border-radius: none
+    letter-spacing: 0.3em
+    text-align: center
+    transition: all .5s ease
+    &:hover
+        background: #3726f2
+
+a
+    display: block
+
+.icon
+    &-logo
+        height: 23px
+        width: 74px
+    &-search
+        height: 20px
+        width: 20px
+    &-menu
+        height: 14px
+        width: 34px
+
+.header
+    height: 90vh
+.nav
+    padding-top: 59px
+    margin-bottom: 127px
+.search
+    background: transparent
+    border: none
+
+.menu
+    background: transparent
+    border: none
+
+.offer-cont
+    &__title
+        font-size: 60px
+        letter-spacing: -0.01em
+        line-height: 1.2em
+
+.vh-dependent
+    height: 15vh
+    display: flex
+    align-items: center
+
+.be-static
+    position: static
+
+
+.hero
+    background: url('/img/img1.jpg') no-repeat right top
+    background-size: 80% 100%
+    width: 55%
+    height: 80vh
+    right: 0
+    position: absolute
+    top: 142px
+
+.video
+    position: absolute
+    left: 0
+    bottom: 30%
+    width: 40%
+    height: 33%
+    display: flex
+    justify-content: center
+    align-items: center
+    background: url('/img/video.jpg') no-repeat center center
+    &::after
+        content: ''
+        display: block
+        background: url('/img/play.svg')
+        width: 65px
+        height: 65px
+
+.problems
+    padding-top: 137px
+
+.about
+    &__title
+        margin-bottom: 30px
+    &__author
+        background: url('/img/author.jpg') no-repeat left center
+        padding: 7px 0 7px 96px
+        margin-top: 61px
+    &__name
+        font-size: 22px
+    &__profession
+        margin-bottom: 0
+
+.services
+    padding-top: 142px
+
+.section-title
+    &__label
+        text-transform: uppercase
+        font-size: 14px
+        @include px2rem(letter-spacing, 6px)
+        color: #8f8f8f
+        margin-bottom: 40px
+
+.serv-list
+    color: #8d8d8d
+    margin-top: 67px
+    &__item
+        margin-bottom: 20px
+    &_m-left
+        margin-left: 37px
+
+.works-carousel
+    margin-top: 99px
+    .item, .owl-item
+        width: 825px !important
+        position: relative
+    &__play
+        display: block
+        background: url('/img/play.svg')
+        width: 65px
+        height: 65px
+        position: absolute
+        left: 50%
+        top: 50%
+        margin-left: -32px
+        margin-top: -32px
+        cursor: pointer
+
+.owl-theme
+    .owl-dots, .owl-nav
+        text-align: left
+    .owl-nav [class*=owl-]
+        margin: 0
+        &:hover
+            background: none
+
+.works-carousel .owl-nav
+    margin-top: 50px !important
+
+.works-carousel.owl-theme.owl-loaded.owl-drag .owl-nav .owl-prev
+    margin-right: 25px 
+
+.result
+    padding-top: 219px
+
+.collage
+    padding-top: 219px
+    width: 50%
+    height: 540px
+    background: url('/img/img6.jpg') no-repeat left top / 80% 70%
+    position: absolute
+    left: 0
+    img
+        display: block
+        width: 350px
+        height: 453px
+        position: absolute
+        box-shadow: 30px 80px 130px rgba(0, 0, 0, .25)
+        right: 0
+        bottom: 0
+
+.ease
+    margin-left: 65px
+    margin-top: 30px
+    &__title
+        margin-bottom: 30px
+    &__text
+        margin-bottom: 52px 
+    &__point
+        text-transform: uppercase
+        letter-spacing: 0.1em
+        color: #000000
+        font-weight: 500
+        padding: 20px 0 20px 83px
+        margin-top: 25px
+        &_first
+            background: url('/img/icon100.svg') no-repeat left center
+        &_second
+            background: url('/img/bag.svg') no-repeat left center
+        
+
+.works
+    padding-top: 283px
+    .work-tabs
+        margin-top: 70px
+        margin-left: 60px
+        font-size: 14px
+        text-transform: uppercase
+        @include px2rem(letter-spacing, 6px)
+        &__item
+            a
+                text-decoration: none
+                color: #8d8d8d
+            &.active a
+                color: #1434e1
+    .tabs-content
+        .active
+            display: flex !important
+    .works-description, .see-works
+        padding-top: 52px
+    .works-description
+        &__text
+            margin: 0
+            padding: 0
+.works-wrap
+    flex-wrap: wrap
+    margin-top: 108px
+    display: none !important
+    &__item
+        margin-bottom: 30px
+        position: relative
+        &:hover
+            &::after
+                content: ''
+                display: block
+                background: url('/img/play.svg')
+                width: 65px
+                height: 65px
+                position: absolute
+                left: 50%
+                top: 50%
+                margin-left: -35px
+                margin-top: -32px
+            img
+                box-shadow: -30px 80px 200px rgba(0, 0, 0, .25)
+                transform: scale(1.1)
+        img
+            transition: all 1s ease
+            display: block
+.testimonials
+    padding-top: 248px
+    .contrib
+        margin-top: 121px
+        &__title
+            margin-bottom: 20px
+        // &__desc
+    .contrib-photo
+        display: block
+
+.contrib-carousel
+    .owl-nav
+        display: flex
+        margin-top: -50px
+        position: relative
+    .owl-prev
+        margin-right: 20px
+
+.clients
+    padding-top: 278px
+    .section-description
+        &__title
+            color: #222222
+            @include px2rem(letter-spacing, 6px)
+            text-transform: uppercase
+            font-size: 14px
+            font-weight: 500
+        &__text
+            color: #636363
+            font-size: 18px
+    &-row
+        margin-top: 127px
+
+.footer
+    height: 240px
+    background: #515151
+    margin-top: 136px
+    .icon-logo
+        fill: #ffffff
+    &-logo
+        margin-top: 109px
+        margin-bottom: 109px
+    
+.img-fluid
+    display: block
+    width: 100%

@@ -1,5 +1,189 @@
 {
     "home": {
-        "title": "Home"
+        "title": "Gravity",
+        "link": "/",
+        "offer": {
+            "title": "Work around you and your team",
+            "text": "From ads that dance or sing to MTV-like commercials, online advertisers are now using a new type of technology “rich media” to attract consumers.",
+            "btn_text": "get started",
+            "video_link": "#"
+        },
+        "problems": {
+            "img": "/img/img2.jpg",
+            "img_alt": "Poster",
+            "title": "We solve digital problems with an outstanding creative flare",
+            "text_p1": "The best time to view the moon, obviously, is at night when there are few clouds and the weather is accommodating for a long and lasting study.",
+            "text_p2": "For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and seeing magnificent displays in the heavens.",
+            "author_name": "Denis Shepovalov",
+            "profession": "Co-Founder & CEO"
+        },
+        "services": {
+            "heaeding": "We love work hard and explore new things that’s why we cover lot of things. Check our service list and view details",
+            "section_title": "— Services",
+            "services": {
+                "col_1": [
+                    "Multimedia",
+                    "Interactive design",
+                    "Packaging",
+                    "Branding"
+                ],
+                "col_2": [
+                    "Creative Strategy",
+                    "UI/UX",
+                    "Coding"
+                ]
+            },
+            "carousel": [
+                "/img/img3.jpg",
+                "/img/img4.jpg"
+            ]
+        },
+        "result": {
+            "images": [
+                "/img/img5.jpg"
+            ],
+            "ease": {
+                "title": "Well thought with super easy to use",
+                "text": "As we approached the palace I could see through the great windows of the first floor the brilliantly illuminated audience chamber of Than Kosis. The immense hall was crowded with nobles and their women.",
+                "point": [
+                    "Ultimate Result",
+                    "Minimal Design"
+                ]
+            }
+        },
+        "works": {
+            "heaeding": "Discover our Work",
+            "section_title": "— Our works",
+            "services": {
+                "tabs": [
+                    {
+                        "title": "All",
+                        "is_active": true,
+                        "link": "#all",
+                        "works": [
+                            {
+                                "link": "#",
+                                "img": "/img/img7.jpg"
+                            },
+                            {
+                                "link": "#",
+                                "img": "/img/img8.jpg"
+                            },
+                            {
+                                "link": "#",
+                                "img": "/img/img9.jpg"
+                            },
+                            {
+                                "link": "#",
+                                "img": "/img/img10.jpg"
+                            },
+                            {
+                                "link": "#",
+                                "img": "/img/img11.jpg"
+                            },
+                            {
+                                "link": "#",
+                                "img": "/img/img12.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Branding",
+                        "is_active": false,
+                        "link": "#branding",
+                        "works": [
+                            {
+                                "link": "#",
+                                "img": "/img/img7.jpg"
+                            },
+                            {
+                                "link": "#",
+                                "img": "/img/img8.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Web",
+                        "is_active": false,
+                        "link": "#web",
+                        "works": [
+                            {
+                                "link": "#",
+                                "img": "/img/img9.jpg"
+                            },
+                            {
+                                "link": "#",
+                                "img": "/img/img10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Development",
+                        "is_active": false,
+                        "link": "#development",
+                        "works": [
+                            {
+                                "link": "#",
+                                "img": "/img/img11.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Films",
+                        "is_active": false,
+                        "link": "#films",
+                        "works": [
+                            {
+                                "link": "#",
+                                "img": "/img/img12.jpg"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "desc_text": "It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.",
+            "desc_btn_text": "see our works"
+        },
+        "testiomonials": {
+            "title": "— Testimonials",
+            "heading": "\"Professionals in their craft! All products were super great with strong attention to details, and overall vibe\"",
+            "contrib": {
+                "name": "Polina Kuzina",
+                "desc": "Manager at Craftwork",
+                "photo": "/img/photo.jpg"
+            }
+        },
+        "clients": {
+            "heading": "Our Clients",
+            "title": "— We worked with",
+            "text": "Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.",
+            "brands": [
+                {
+                    "name": "Xiaomi",
+                    "img": "/img/xiaomi.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "Tinder",
+                    "img": "/img/tinder.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "Apple",
+                    "img": "/img/apple.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "Nike",
+                    "img": "/img/nike.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "AMD",
+                    "img": "/img/amd.svg",
+                    "link": "#"
+                }
+            ]
+        }
     }
 }

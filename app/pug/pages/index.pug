@@ -4,3 +4,151 @@ block variables
     - var title = $.home.title
 
 block content
+    header.header
+        nav.nav
+            .container
+                .row
+                    .col-md-4
+                        a(href= $.home.link).mr-auto
+                            +icon('logo')
+                    .offset-md-2.col-md-3
+                        button.search
+                            +icon('search')
+                    .col-md-3
+                        button.menu.ml-auto
+                            +icon('menu')
+
+        .offer
+            .container
+                .row
+                    .col-md-6.vh-dependent
+                        +b.offer-cont
+                            +e.H1.title= $.home.offer.title
+                            +e.P.text= $.home.offer.text
+                            +e.BUTTON.btn.btn= $.home.offer.btn_text
+
+                    .col-md-6.be-static.vh-dependent
+                        .hero
+                            a(href= $.home.offer.video_link).video
+    section.problems
+        .container
+            .row
+                .col-md-5
+                    img(src= $.home.problems.img,
+                    alt=$.home.problems.img_alt).img-fluid
+
+                .col-md-6.ml-auto.d-flex.align-items-center
+                    +b.about
+                        +e.H2.title= $.home.problems.title
+                        +e.P.text= $.home.problems.text_p1
+                        +e.P.text= $.home.problems.text_p2
+                        +e.author
+                            +e.H4.name= $.home.problems.author_name
+                            +e.profession= $.home.problems.profession
+    section.services
+        .container
+            .row
+                .col-md-6
+                    +b.section-title
+                        +e.P.label= $.home.services.section_title
+                        +e.H2.heading= $.home.services.heaeding
+                .col-md-5.ml-auto.d-flex.justify-content-between
+                    +b.UL.serv-list._m-left
+                        each item in $.home.services.services.col_1
+                            +e.LI.item= item
+                    +b.UL.serv-list
+                        each item in $.home.services.services.col_2
+                            +e.LI.item= item
+            .row
+                .col
+                    +b.works-carousel.owl-carousel.owl-theme
+                        each item in $.home.services.carousel
+                            .item
+                                img(src= item, alt="Work")
+                                +e.SPAN.play
+    section.result
+        .container
+            .row
+                .col-md-6.be-static
+                    .collage
+                        img(src= $.home.result.images[0], alt="Work")
+
+                .col-md-6
+                    +b.ease
+                        +e.H2.title= $.home.result.ease.title
+                        +e.P.text= $.home.result.ease.text
+                        +e.point._first= $.home.result.ease.point[0]
+                        +e.point._second= $.home.result.ease.point[1]
+    section.works
+        .container
+            .row
+                .col-md-6
+                    +b.section-title
+                        +e.P.label= $.home.works.section_title
+                        +e.H2.heading= $.home.works.heaeding
+                .col-md-6
+                    +b.UL.work-tabs.d-flex.justify-content-between
+                        each tab in $.home.works.services.tabs
+                            if tab.is_active
+                                +e.LI.item.active
+                                    a(href= tab.link)= tab.title
+                            else
+                                +e.LI.item
+                                    a(href= tab.link)= tab.title
+            .row
+                .col-12.col-xl-6
+                    .tabs-content
+                        each tab in $.home.works.services.tabs
+                            if tab.is_active
+                                +b.DIV(id= tab.link.replace('#', '')).works-wrap.d-flex.justify-content-between.active
+                                    each item in tab.works
+                                        +e.A(href= item.link).item
+                                            img(src= item.img, alt="Work")
+                            else
+                                +b.DIV(id= tab.link.replace('#', '')).works-wrap.d-flex.justify-content-between
+                                    each item in tab.works
+                                        +e.A(href= item.link).item
+                                            img(src= item.img, alt="Work")
+            .row
+                .col-md-8
+                    +b.works-description
+                        +e.P.text= $.home.works.desc_text
+                .col-md-3.ml-auto
+                    .see-works.d-flex
+                        +e.BUTTON.btn.btn.ml-auto= $.home.works.desc_btn_text
+    section.testimonials
+        .container
+            .contrib-carousel.owl-carousel
+                each val in [1, 2]
+                    .row
+                        .col-md-6
+                            +b.section-title
+                                +e.P.label= $.home.testiomonials.title
+                                +e.H2.heading= $.home.testiomonials.heading
+                            +b.contrib
+                                +e.H3.title= $.home.testiomonials.contrib.name
+                                +e.P.desc= $.home.testiomonials.contrib.desc
+                        .col-md-5.ml-auto
+                            img(src= $.home.testiomonials.contrib.photo,
+                            alt= $.home.testiomonials.contrib.name).contrib-photo.img-fluid
+    section.clients
+        .container
+            .row
+                .col-md-6
+                    +b.section-title
+                        +e.H2.heading= $.home.clients.heading
+                .col-md-5.ml-auto
+                    +b.section-description
+                        +e.P.title= $.home.clients.title
+                        +e.P.text= $.home.clients.text
+            .row
+                .col
+                    +b.clients-row.d-flex.justify-content-between
+                        each brand in $.home.clients.brands
+                            +e.A(href= brand.link).item
+                                img(src= brand.img, alt= brand.name)
+    footer.footer
+        .container
+            .row
+                .col.d-flex.justify-content-center
+                    +icon('logo', 'footer-logo')

@@ -550,6 +550,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
 
+bootstrap-4-grid@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-4-grid/-/bootstrap-4-grid-3.1.0.tgz#286243ab24de563788f21dc4de9de94ee683b13a"
+  integrity sha512-zI4YmvaBcSbyn4aagfw6awbaNbpeTSohh0txPRNtxzn/WcctBeZudHueGvg20YNNLFHy/19WxdptsztZ0Y7TyQ==
+
 bourbon@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/bourbon/-/bourbon-6.0.0.tgz#41ad318371128888261a390bebe0e9e89daaa01e"
@@ -3439,6 +3444,11 @@ jpegtran-bin@^3.0.0:
     bin-wrapper "^3.0.0"
     logalot "^2.0.0"
 
+jquery@>=1.8.3, jquery@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
+  integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
+
 js-base64@^2.1.8:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.5.1.tgz#1efa39ef2c5f7980bb1784ade4a8af2de3291121"
@@ -4552,6 +4562,13 @@ osenv@0, osenv@^0.1.4:
   dependencies:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
+
+owl.carousel@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/owl.carousel/-/owl.carousel-2.3.4.tgz#6c53dc8d24304b790e4f27a1dc4a655e973ccdc9"
+  integrity sha512-JaDss9+feAvEW8KZppPSpllfposEzQiW+Ytt/Xm5t/3CTJ7YVmkh6RkWixoA2yXk2boIwedYxOvrrppIGzru9A==
+  dependencies:
+    jquery ">=1.8.3"
 
 p-cancelable@^0.3.0:
   version "0.3.0"
@@ -5932,6 +5949,11 @@ svgo@^1.1.1:
 symbol-observable@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.1.tgz#8340fc4702c3122df5d22288f88283f513d3fdd4"
+
+tabslet@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/tabslet/-/tabslet-1.7.3.tgz#b105873976cb1db4afce366dc391e094f0479818"
+  integrity sha1-sQWHOXbLHbSvzjZtw5HglPBHmBg=
 
 tar-stream@^1.1.1, tar-stream@^1.5.2:
   version "1.6.2"
